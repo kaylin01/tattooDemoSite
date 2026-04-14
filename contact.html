@@ -59,7 +59,7 @@
       color: rgba(255,255,255,0.65);
       position: relative;
       z-index: 1;
-      max-width: 500px;
+      max-width: 100%;
       margin: 0.75rem auto 0;
     }
 
@@ -246,6 +246,12 @@
       .form-row {
         grid-template-columns: 1fr !important;
       }
+      
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        overflow-x: hidden;
+      }
     }
   </style>
 </head>
@@ -304,7 +310,7 @@
   <!-- ══════════════════════════════════════════
        CONTACT HERO
   ══════════════════════════════════════════ -->
-  <div class="contact-hero" aria-label="Contact page header">
+  <div class="contact-hero" aria-label="Contact page header" style="padding-left:1rem;padding-right:1rem;">
     <span class="section-label" style="color:var(--clr-primary);position:relative;z-index:1;">Get in Touch</span>
     <h1>Let's Create<br>Something Together.</h1>
     <p>Book an appointment, ask a question, or just say hello. We're always happy to hear from you.</p>
@@ -430,7 +436,7 @@
             </div>
 
             <!-- Submit -->
-            <button type="submit" class="btn btn-primary" style="align-self:flex-start;min-width:200px;justify-content:center;">
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;width:100%;justify-content:center;">
               Send Message ✦
             </button>
 
